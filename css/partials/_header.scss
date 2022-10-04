@@ -1,0 +1,17 @@
+header {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        @extend %textCenter;
+
+        a {
+            font-size: 1.8rem;
+            font-weight: 300;
+
+            span {
+                color: $colorAzul;
+            }
+        }
+    }
+}

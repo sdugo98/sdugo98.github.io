@@ -1,0 +1,321 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Index*/
+
+body {
+    font-family: 'Quicksand';
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+
+@import "./partials/maps", "./partials/extends", "./partials/colors", "./partials/header", "./partials/footer";
+
+.intro-personal {
+    background-color: map-get($estilos, colorFondo);
+    margin: 10px 0px;
+
+    img {
+        margin: 20px 0px;
+        width: 100%;
+        border: map-get($borders, borderBlue);
+
+    }
+}
+
+.intro-personal p {
+    margin-top: 40px;
+    font-size: 1rem;
+    text-align: justify;
+    color: whitesmoke;
+
+    span {
+        font-size: 1.1rem;
+        font-weight: 800;
+        color: $colorAzul;
+
+    }
+}
+
+
+.info-adicional {
+    width: 100%;
+    background-color: map-get($estilos, colorFondo);
+    margin: 10px 0px;
+
+    p {
+        color: white;
+        font-size: 1rem;
+        @extend %textCenter;
+    }
+
+    .imagen-info {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: 10px 0px;
+
+        img {
+            border: map-get($borders, borderBlue);
+            margin-left: 10px;
+            width: 300px;
+            height: 200px;
+            transition: all 1s ease-out;
+
+            &:hover {
+                width: 650px;
+                height: 500px;
+            }
+        }
+    }
+}
+
+
+
+.fila-contacto {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0000005b;
+
+    .imagen-contacto {
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/backgroundcontacto.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .imagen-contacto h1 {
+            font-size: 2.3rem;
+            margin-top: 30px;
+            color: whitesmoke;
+            @extend %textCenter;
+
+            .imagen-contacto h2 {
+                font-size: 2.2rem;
+                margin-top: 30px;
+                color: whitesmoke;
+                @extend %textCenter;
+            }
+        }
+    }
+}
+
+
+.boxGaleria {
+    background-color: #16161593;
+    margin: 20px 0px 20px 0px;
+
+    .boxImagen {
+        margin-left: 5px;
+        margin-top: 10px;
+        min-width: 100px;
+        min-height: 100px;
+        width: 600px;
+        height: 350px;
+        border: 03px ridge black;
+        border-radius: 05px;
+        transition: all 1s ease-in;
+
+        &:hover {
+            width: 620px;
+            height: 400px;
+        }
+    }
+}
+
+/* Pagina Sobre Mi*/
+
+main {
+    .fila-sobremi {
+        background-color: map-get($estilos, colorFondo);
+
+        h1 {
+            text-align: center;
+            color: $colorAzul;
+        }
+
+        p {
+            margin: 25px 10px 50px 10px;
+            font-size: 20px;
+            color: whitesmoke;
+        }
+
+        h2 {
+            color: $colorAzul;
+        }
+    }
+}
+
+/* Pagina Skills*/
+
+.main-skills {
+    overflow-x: hidden;
+    background-color: map-get($estilos, colorFondo);
+
+    h1 {
+        text-align: center;
+        color: $colorAzul;
+        font-weight: 300;
+    }
+}
+
+.main-estudios {
+    h2 {
+        margin: 20px 0px 20px 20px;
+        color: $colorAzul;
+        text-align: start;
+    }
+
+    p {
+        margin-top: 10px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        color: whitesmoke;
+    }
+}
+
+.imagen-estudios {
+    img {
+        min-width: 150px;
+        max-width: 800px;
+        height: 500px;
+        border: map-get($borders, borderBlue);
+
+    }
+}
+
+
+
+
+
+/* Media queries*/
+
+@media screen and (min-width: 320px) {
+    .imagen-contacto {
+        h1 {
+            font-size: 1.8rem;
+            margin-top: 30px;
+            color: rgb(252, 252, 252);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-top: 30px;
+            color: whitesmoke;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width:545px) {
+
+    .imagen-info img {
+        border: map-get($borders, borderBlue);
+        margin-left: 10px;
+        width: 535px;
+        height: 350px;
+    }
+
+    .imagen-contacto {
+        border-bottom: 1px solid white;
+
+        h1 {
+            font-size: 1.8rem;
+            margin-top: 30px;
+            color: rgb(252, 252, 252);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-top: 30px;
+            color: whitesmoke;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .boxGaleria {
+        margin-right: 5px;
+        width: 100%;
+
+        .boxImagen {
+            width: 300px;
+            height: 320px;
+        }
+    }
+
+    .imagen-estudios {
+        img {
+            margin-left: 4px;
+            width: 314px;
+        }
+
+    }
+
+}
+
+@media screen and (min-width:575px) {
+    .imagen-contacto {
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/backgroundcontacto.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+
+    body p {
+        font-size: 4rem;
+    }
+
+    .imagen-info img {
+        width: 700px;
+        height: 500px;
+    }
+
+    .imagen-estudios {
+        img {
+            margin-left: 100px;
+            width: 600px;
+        }
+
+    }
+
+    .footer-contacto {
+        height: 20vh;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    .imagen-info {
+        img {
+            width: 900px;
+            height: 600px;
+        }
+    }
+
+    .imagen-estudios {
+        img {
+            margin-left: 500px;
+            width: 900px;
+        }
+    }
+
+
+}

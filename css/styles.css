@@ -1,0 +1,274 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Index*/
+body {
+  font-family: "Quicksand";
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+
+.fila-contacto .imagen-contacto .imagen-contacto h1 .imagen-contacto h2, .fila-contacto .imagen-contacto .imagen-contacto h1, .info-adicional p, header .navbar {
+  text-align: center;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+header .navbar a {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+header .navbar a span {
+  color: #3472e6;
+}
+
+.site-footer {
+  height: 100%;
+}
+.site-footer .iconos a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin: 10px;
+}
+.site-footer .iconos a i:hover {
+  color: #3472e6;
+  transform: scale(1.5);
+  transition: ease-in-out 0.8s;
+}
+
+.intro-personal {
+  background-color: rgba(37, 38, 39, 0.9803921569);
+  margin: 10px 0px;
+}
+.intro-personal img {
+  margin: 20px 0px;
+  width: 100%;
+  border: ridge 2px #3472e6;
+}
+
+.intro-personal p {
+  margin-top: 40px;
+  font-size: 1rem;
+  text-align: justify;
+  color: whitesmoke;
+}
+.intro-personal p span {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #3472e6;
+}
+
+.info-adicional {
+  width: 100%;
+  background-color: rgba(37, 38, 39, 0.9803921569);
+  margin: 10px 0px;
+}
+.info-adicional p {
+  color: white;
+  font-size: 1rem;
+}
+.info-adicional .imagen-info {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+.info-adicional .imagen-info img {
+  border: ridge 2px #3472e6;
+  margin-left: 10px;
+  width: 300px;
+  height: 200px;
+  transition: all 1s ease-out;
+}
+.info-adicional .imagen-info img:hover {
+  width: 650px;
+  height: 500px;
+}
+
+.fila-contacto {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.3568627451);
+}
+.fila-contacto .imagen-contacto {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/backgroundcontacto.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.fila-contacto .imagen-contacto .imagen-contacto h1 {
+  font-size: 2.3rem;
+  margin-top: 30px;
+  color: whitesmoke;
+}
+.fila-contacto .imagen-contacto .imagen-contacto h1 .imagen-contacto h2 {
+  font-size: 2.2rem;
+  margin-top: 30px;
+  color: whitesmoke;
+}
+
+.boxGaleria {
+  background-color: rgba(22, 22, 21, 0.5764705882);
+  margin: 20px 0px 20px 0px;
+}
+.boxGaleria .boxImagen {
+  margin-left: 5px;
+  margin-top: 10px;
+  min-width: 100px;
+  min-height: 100px;
+  width: 600px;
+  height: 350px;
+  border: 3px ridge black;
+  border-radius: 5px;
+  transition: all 1s ease-in;
+}
+.boxGaleria .boxImagen:hover {
+  width: 620px;
+  height: 400px;
+}
+
+/* Pagina Sobre Mi*/
+main .fila-sobremi {
+  background-color: rgba(37, 38, 39, 0.9803921569);
+}
+main .fila-sobremi h1 {
+  text-align: center;
+  color: #3472e6;
+}
+main .fila-sobremi p {
+  margin: 25px 10px 50px 10px;
+  font-size: 20px;
+  color: whitesmoke;
+}
+main .fila-sobremi h2 {
+  color: #3472e6;
+}
+
+/* Pagina Skills*/
+.main-skills {
+  overflow-x: hidden;
+  background-color: rgba(37, 38, 39, 0.9803921569);
+}
+.main-skills h1 {
+  text-align: center;
+  color: #3472e6;
+  font-weight: 300;
+}
+
+.main-estudios h2 {
+  margin: 20px 0px 20px 20px;
+  color: #3472e6;
+  text-align: start;
+}
+.main-estudios p {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+.imagen-estudios img {
+  min-width: 150px;
+  max-width: 800px;
+  height: 500px;
+  border: ridge 2px #3472e6;
+}
+
+/* Media queries*/
+@media screen and (min-width: 320px) {
+  .imagen-contacto h1 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    color: rgb(252, 252, 252);
+    text-align: center;
+  }
+  .imagen-contacto h2 {
+    font-size: 1.6rem;
+    margin-top: 30px;
+    color: whitesmoke;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 545px) {
+  .imagen-info img {
+    border: ridge 2px #3472e6;
+    margin-left: 10px;
+    width: 535px;
+    height: 350px;
+  }
+  .imagen-contacto {
+    border-bottom: 1px solid white;
+  }
+  .imagen-contacto h1 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    color: rgb(252, 252, 252);
+    text-align: center;
+  }
+  .imagen-contacto h2 {
+    font-size: 1.6rem;
+    margin-top: 30px;
+    color: whitesmoke;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .boxGaleria {
+    margin-right: 5px;
+    width: 100%;
+  }
+  .boxGaleria .boxImagen {
+    width: 300px;
+    height: 320px;
+  }
+  .imagen-estudios img {
+    margin-left: 4px;
+    width: 314px;
+  }
+}
+@media screen and (min-width: 575px) {
+  .imagen-contacto {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/backgroundcontacto.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 768px) {
+  body p {
+    font-size: 4rem;
+  }
+  .imagen-info img {
+    width: 700px;
+    height: 500px;
+  }
+  .imagen-estudios img {
+    margin-left: 100px;
+    width: 600px;
+  }
+  .footer-contacto {
+    height: 20vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .imagen-info img {
+    width: 900px;
+    height: 600px;
+  }
+  .imagen-estudios img {
+    margin-left: 500px;
+    width: 900px;
+  }
+}/*# sourceMappingURL=styles.css.map */
